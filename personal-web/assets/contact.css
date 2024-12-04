@@ -1,0 +1,35 @@
+.btn-contact {
+    width: 30%;
+    background-color: rgb(9, 9, 9);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
