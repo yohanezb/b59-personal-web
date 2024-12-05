@@ -1,0 +1,89 @@
+
+
+body  {
+    background-color: #E3E7EB;
+}
+
+p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.social-media{
+    min-width: 12px;
+    text-align: center;
+    font-size: 15px;
+    padding: 6px 7px;
+    color: white; 
+    background-color: black;
+    margin: 0px 7px;
+    border-radius: 100px;
+}
+
+.name-card{
+    max-width: 280px;
+    background-color: white;
+    box-shadow: 0px 10px 30px -20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.name-card h2 {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.name-card h4 {
+    font-size: small;
+    font-weight: light;
+    margin-top: 0px;
+}
+
+.card-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -22px;
+    margin: 50px 30%;
+    }
+
+.card-container .content {
+    margin:auto;
+    width: 500px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.card-container .btn-contact {
+    background-color: #111727;
+    width: 80px;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: small;
+    color: white;
+    border: solid #111727;
+    text-align: center;
+    display: block;
+    margin-bottom:10px;
+    margin-top: 30px;
+}
+
+.profile-container {
+    margin: 40px auto;
+    padding: 50px;
+    max-width:  900px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px -20px;
+}
+
+.profile-container .content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

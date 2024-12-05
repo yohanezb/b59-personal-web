@@ -1,8 +1,6 @@
 var contactForm = document.getElementById("contactForm")
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
+function formSubmit(e) {
     var form = e.target;
     var formData = new FormData(form)
 
@@ -14,7 +12,12 @@ contactForm.addEventListener('submit', (e) => {
 
     var link = document.createElement('a');
 
-    link.href=`mailto:yohanez.budhy@gmail.com?subject=${data.subject}&body=Selamat siang, Nama Saya ${data.name}.%0D%0ASilahkan hubungi Saya%0D%0AEmail :${data.email}%0D%0ATelepon :${data.phoneNumber}.%0D%0A${data.message}`
+    link.href=`mailto:yohanez.budhy@gmail.com?subject=${data.subject}&body=${data.message}`
 
     link.click();
+}
+
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    formSubmit(e);
 })

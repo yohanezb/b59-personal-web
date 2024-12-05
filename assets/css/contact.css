@@ -1,3 +1,10 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .btn-contact {
     width: 30%;
     background-color: rgb(9, 9, 9);
@@ -25,11 +32,14 @@ textarea {
   background: #f4f3f3;
   border: 1px solid #c4c4c4;
   border-radius: 8px;
+  -moz-appearance: textfield;
 }
 
+main {
+  margin: 40px auto;
+}
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+main h1 {
+  text-align: center;
+  font-weight: bold;
+}
