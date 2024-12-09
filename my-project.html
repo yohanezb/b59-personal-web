@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Name Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li>
+            <a href="index.html">
+                <img src="assets/img/logo.png" style="height:30px" alt="dumbways logo"/>
+            </a>
+        </li>
+        <li>
+            <a href="index.html" class="active nav-button nav-link">Home</a> 
+        </li>
+        <li>
+          <a href="my-project.html" class="active nav-button nav-link">My Project</a> 
+      </li>
+        <li class="nav-right">
+            <a href="contact.html" class="btn-contact nav-link">Contact Me</a>
+        </li>
+    </ul>
+</nav>
+
+<main>
+  <section class="project-container">
+      <form onsubmit="addProject(event)" class="project-form-container">
+          <h1>Add My Project</h1>
+          <div>
+              <label for="input-project-title">Project Name</label>
+              <input id="input-project-title" type="text" name="input-project-title"/>
+          </div>
+          <div class="input-project-date-container">
+              <div class="input-date">
+                  <label for="input-project-start-date">Start Date</label>
+                  <input id="input-project-start-date" type="date" name="input-project-start-date"/>
+              </div>
+              <div class ="input-date">
+                  <label for="input-project-end-date">End Date</label>
+                  <input id="input-project-end-date" type="date" name="input-project-end-date"/>
+              </div>
+          </div>
+          <div>
+              <label for="input-project-description">Description</label>
+              <textarea style="resize: none;" id="input-project-description" name="input-project-description" rows="5"></textarea>
+          </div>
+          <label for="input-project-technologies">Technologies</label>
+          <div class="technologies-checkbox-container">
+              <div class="checkbox">
+                  <div class="technologies">
+                      <input id="node-js" type="checkbox" name="node-js"/>
+                      <label for="node-js">Node Js</label>
+                  </div>
+                  <div class="technologies">
+                      <input id="react-js" type="checkbox" name="react-js"/>
+                      <label for="react-js">React Js</label>
+                  </div>
+              </div>
+              <div class="checkbox">
+                  <div class="technologies">
+                      <input id="next-js" type="checkbox" name="next-js"/>
+                      <label for="next-js">Next Js</label>
+                  </div>
+                  <div class="technologies">
+                      <input id="typescript" type="checkbox" name="typescript"/>
+                      <label for="typescript">Typerscript</label>
+                  </div>
+              </div>
+          </div>
+          <label for="input-project-image">Upload Image</label>
+          <div>
+            <label for="input-project-image">
+              <div class="input-project-image-container">
+                <p>choose</p>
+                <img src="assets/img/attach.png"/>    
+                <input id="input-project-image" type="file" name="input-project-image" hidden/>
+              </div>
+            </label>
+          </div>
+          <div style="text-align: end;">
+            <button class="btn-submit ">Submit</button>
+          </div>
+      </form>
+  </section>
+</main>
+
+<main class="project-page">
+  <h1 style="padding-top: 70px;">My Projects</h1>
+  <a href="project-detail.html">
+    <div id="projectList" class="project-card-container">
+      <div class="project-card">
+        <img src="assets/img/kucing.jpeg"/>
+        <div>
+          <h3>Teknologi berkembang pesat 2025</h3>
+          <h4>Durasi : 1 months</h4>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, facilis magni incidunt libero quo velit pariatur quos dolor? Consequuntur quam eligendi, fugit aliquam explicabo reprehenderit ad ullam a totam unde.</p>
+          </div>
+        </div>
+        <div class="technologies-icon">
+          <img src="assets/img/next-js.png">
+          <img src="assets/img/react-js.png">
+          <img src="assets/img/node-js.png">
+          <img src="assets/img/typescript.png">
+        </div>
+        <div class="button-container">
+          <a href="" class="button">Edit</a>
+          <a href="" class="button">Delete</a>
+        </div>
+      </div>
+    </div>
+  </a>
+</main>
+
+<script src="assets/js/my-project.js"></script>
+</body>
+</html>
+
